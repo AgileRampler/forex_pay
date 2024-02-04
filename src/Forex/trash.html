@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Wallet Balance</title>
+</head>
+<body>
+    <h1>MetaMask Wallet Balance</h1>
+    <p id="balance"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+    <script>
+        // Check if MetaMask is installed
+        if (typeof window.ethereum !== 'undefined') {
+            const web3 = new Web3(window.ethereum);
+
+            // Request account access if needed
+            window.ethereum.request({ method: 'eth_requestAccounts' })
+            .then(() => {
+                // Get the user's ETH address
+                const address = web3.currentProvider.selectedAddress;
+
+                // Get the balance of the user's wallet
+                web3.eth.getBalance(address, (err, balance) => {
+                    if (err) {
+                        console.error(err);
+                    } else {
+                        // Convert balance from Wei to Ether
+                        const etherBalance = web3.utils.fromWei(balance, 'ether');
+                        document.getElementById('balance').textContent = `Wallet Balance: ${etherBalance} GoerliETH`;
+                    }
+                });
+            })
+            .catch(err => {
+                console.error(err);
+            });
+        } else {
+            // MetaMask is not installed
+            console.error('MetaMask is not installed');
+        }
+    </script>
+</body>
+</html>

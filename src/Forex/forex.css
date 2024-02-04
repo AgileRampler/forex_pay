@@ -1,0 +1,217 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+   
+
+}
+
+.navigation {
+
+    background-color: black;
+    border-style: solid;
+    box-shadow: 0px 0px 0px 5px #0B60B0;
+}
+
+
+.material-symbols-outlined {
+    position: relative;
+    color: white;
+    transform: translate(70rem, 1.3rem);
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+.wallet-connect-container {
+  
+}
+
+#wallet-connect {
+    background-color:#0B60B0;
+    color: white;
+    padding: 10px;
+    transform: translate(80rem, -1rem);
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.side-container {
+    margin-top: 2px;
+    position: relative;
+    width: 13vw;
+    height: 86vh;
+    background-color: black;
+   box-shadow:  8px -2px 0px 0px  #0B60B0;
+
+
+
+}
+
+.side-navigation a {
+    
+    display: block;
+    padding: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+    opacity: 0.8;
+    color: white;
+ 
+}
+.side-navigation a :visited{
+    color: purple;
+}
+.no-wallet{
+    position: absolute;
+    transform: translate(40rem,-20rem);
+    font-size: 50px;
+    color: white;
+
+}
+
+/* trasfer.html */
+.transfer-container{
+    position: absolute;
+    padding: 160px;
+    padding-left: 10rem;
+    padding-bottom: 18rem;
+    border: 2px solid;
+    border-color: #0B60B0;
+    transform: translate(25rem,-34rem);
+}
+
+
+.send{
+    color: white;
+    background-color: black;
+    transform: translate(-5rem,-8rem);
+    
+}
+.Network-buttons{
+   
+    transform: translate(-7rem,-7rem);
+
+    cursor: pointer;
+
+}
+#networkSelect{
+    color: white;
+    padding: 20px;
+   
+     
+}
+#networkSelect option {
+    padding: 20px;
+    cursor: pointer;
+    
+}
+#switchNetworkButton{
+    color: white;
+    padding: 10px;
+    background-color: #0B60B0;
+    border: none;
+    cursor: pointer;
+}
+
+.address{
+    position: absolute;
+    transform: translate(-2rem,-5rem);
+    font-size: 20px;
+    color: white;
+}
+#Recipient-Address{
+    font-size: 10px;
+    padding: 20px;
+    padding-right: 10rem;
+    color: white;
+    border-color: white;
+    
+}
+.Asset{
+    position: absolute;
+    transform: translate(0.5rem,3rem);
+    font-size: 20px;
+}
+#Asset-amount{
+    font-size: 10px;
+    padding: 20px;
+    padding-right: 10rem;
+    color: white;
+    border-color: white;
+    
+}
+#send-Asset{
+    background-color: #0B60B0;
+    transform: translate(3rem,10rem);
+    padding: 20px;
+    cursor: pointer;
+    padding-right:4rem ;
+    padding-left: 4rem;
+}
+
+/* portfolio.html */
+
+.card-element{
+    transform: translate(20rem,-34rem);
+    position: absolute;
+    background-color: #0B60B0;
+    padding: 10rem;
+    padding-left: 20rem;
+    border-radius: 20px;
+
+
+}
+#price{
+    position: absolute;
+    background-color: #0B60B0;
+    color: white;
+    transform: translate(-18rem,-0rem);
+    font-size: 80px;
+}
+.portfolio-value{
+    background-color: #0B60B0;
+    color: white;
+    transform: translate(-18rem,-0rem);
+
+}
+.balance-view{
+    background-color: #232D3F;
+ 
+    position: absolute;
+    transform: translate(60rem,-35rem);
+    padding: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 25rem;
+    border-radius: 20px;
+    padding-bottom: 30rem;
+    
+
+}
+.wallet-address{
+    position: absolute;
+    transform: translateX(-24rem);
+    background-color: #232D3F;
+    color: white;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 20rem;
+     
+    
+}
+.wallet-price{
+    transform: translate(20rem,-20px);
+    color: white;
+    background-color: #232D3F;
+
+}

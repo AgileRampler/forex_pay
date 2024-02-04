@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foerx Pay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="forex.css">
+
+
+</head>
+<body>
+    <!-- The Navigation part of the Website -->
+    <div class="navigation">
+        
+        <span class="material-symbols-outlined">
+            dark_mode
+            </span>
+      
+        <div class="wallet-connect-container">
+            
+        <button id="wallet-connect" onclick="toggleWalletConnection()">
+                Connect Wallet
+        </button>
+        <script src="wallet.js"></script>
+    </div>
+        
+    </div>
+    <aside class="side-container">
+        <div class="side-navigation">
+          
+    
+       <a href="portfolio.html"><i class="fa-solid fa-wallet"></i>Portfolio</a>
+       <a href="transfer.html"><i class="fa-solid fa-paper-plane"></i>Transfer</a>
+       <a href="#"><i class="fa-solid fa-right-left"></i>Swap</a>
+       <a href="#"><i class="fa-solid fa-address-book "></i>AddressBook</a>
+       <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+       <a href="#"><i class="fa-solid fa-ellipsis"></i></i>More</a>
+        </div>
+    </aside>
+
+                         <!-- The Trasanction Container  -->
+
+                        <main>
+                            <div class="transfer-container">
+                                <div class="transaction-container">
+                                    <div class="send"> Send</div>
+                                    
+                                    <div class="Network-buttons">
+                                        <select id="networkSelect">
+                                        <option value="mainnet">Select Network</option>
+                                        <option value="arbitrum">Arbitrum</option>
+                                        <option value="optimism">Optimism</option>
+                                        <option value="matic">Polygon</option>
+                                        <option value="goerli">Goerli</option>
+                                        </select>
+                                        <button id="switchNetworkButton" >Switch Network</button>
+                                        </div>  
+                                         <!-- Input and amount area -->
+
+                                         <div class="address">
+                                            <div class="Recipient"> Recipient 
+                                                <div>
+                                                <input type="text" placeholder="Enter your address" name="" id="Recipient-Address">
+                                            </div>
+                                            </div>
+                                            <div class="amount">
+                                                <div class="Asset"> Asset <div>
+                                                    <input type="number" placeholder="Enter the amount" name="" id="Asset-amount">
+                                                </div>
+                                                </div>
+                                                <div class="SendBtn"> <button id="send-Asset"> <i class="fa-solid fa-paper-plane" style="color: white;"></i> Transfer </button></div>
+                                              </div>
+                                              <script src="wallet.js"></script>
+                                              
+                                </div>
+                            </div>
+                        </main>
+
+    
+
+</html>
